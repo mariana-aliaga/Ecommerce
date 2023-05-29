@@ -27,10 +27,9 @@ incrustar_hoja_estilos_comision();
             $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
     <div class="card col-12 col-md-4">
-      <?php ecommerce_post_thumbnail(); ?>
+        <?php ecommerce_post_thumbnail(); ?>
         <div class="card-body">
             <h5 class="card-title text"><?php echo get_the_title();?></h5>
-            <p class="card-text"><?php the_excerpt();?></p>
         </div>
     </div>
 

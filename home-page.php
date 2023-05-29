@@ -30,7 +30,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-
+		<?php include get_template_directory(). '/assets/modulos/modulo-productos/loop-productos.php';?>
 	</main><!-- #main -->
 
 <?php
