@@ -1,7 +1,7 @@
 <script>
 function incrustar_hoja_estilos_comision() {
     var hoja_estilos_url =
-        '<?php echo get_site_url() . '/wp-content/themes/spotify/assets/modulos/modulo-audios/modulo-audios.css';?>';
+        '<?php echo get_site_url() . '/wp-content/themes/spotify/assets/modulos/modulo-productos/modulo-productos.css';?>';
     var hoja_estilos = document.createElement('link');
     hoja_estilos.rel = 'stylesheet';
     hoja_estilos.href = hoja_estilos_url;
@@ -26,10 +26,10 @@ incrustar_hoja_estilos_comision();
             );
             $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-    <div class="card carta">
+    <div class="card col-12 col-md-4">
       <?php ecommerce_post_thumbnail(); ?>
         <div class="card-body">
-            <h5 class="card-title text"><?php get_the_title();?></h5>
+            <h5 class="card-title text"><?php echo get_the_title();?></h5>
             <p class="card-text"><?php the_excerpt();?></p>
         </div>
     </div>
