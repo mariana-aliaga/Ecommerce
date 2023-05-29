@@ -15,7 +15,7 @@
 	</header><!-- .entry-header -->
 
 	<?php ecommerce_post_thumbnail(); ?>
-
+gbkjbhjhi
 	<div class="entry-content">
 		<?php
 		the_content();
